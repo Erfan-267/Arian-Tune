@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .collction:nth-child(1)>span{
+    color: darkcyan;
+   }
+    ::-webkit-scrollbar{
+        width: 13px;
+        height: 13px;
+
+    }
+    ::-webkit-scrollbar-track{
+        background-color: black;
+
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 7.5px;
+
+    }
+   
+    
+.all_cont{
+    width: 100%;
+    min-height: 85vh;
+    max-height: auto;
+    display: flex;justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.post{
+    width: 350px;
+    height: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px lightgray,-3px -3px 5px lightgray;
+    
+
+}
+.post-img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content:start;
+    align-items:start;
+
+
+}
+.post-img>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+}
+#special-img{
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    margin: 10px;
+    position: absolute;
+}
+.post-data{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.post-data>span{
+    width: 90%;
+    height: 20px;
+    font-family: 'digi';
+    display: flex;justify-content: center;align-items: center;
+    font-size: 15px;
+    overflow: hidden;
+
+}
+.post-btn{
+    width: 90%;
+    height: 40px;
+    background-color: #0dcaf0;
+    border-radius: 5px;
+    font-family: 'digi';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    display: flex;justify-content: center;align-items: center;
+    margin-bottom: 5px;
+
+}
+.post-btn:hover{
+    color: black;
+}
+.order-cont{
+    width: 100%;
+    height: 100px;
+    display: flex;justify-content:space-around;align-items: center;
+}
+.order-cont>label{
+    font:30px 'digi';
+}
+.order-cont>select{
+    width: 100px;
+    height: 50px;
+    background-color:yellow;
+    font: 20px 'digi';
+    border-radius: 10px;
+    text-align: center;
+    border:3px solid black ;
+    
+}
