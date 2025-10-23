@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: "digi";
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.otf");
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.ttf");
+}
+
+.comment{
+        width: 300px;
+        height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        border-radius: 10px;
+        font: 30px 'digi';
+        color: yellow;
+        flex-shrink: 0;
+    }
+    .stars{
+        width: 90%;
+        height: 90%;
+    }
+.show-video-cont{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../shop-img/sep09.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
+}
+.text-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+.video-background{
+    /* display: block; */
+    height: 100%;
+    position: absolute;
+    
+    
+    
+    
+    
+}
+.head-text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    font-family: "digi";
+    text-align: center;
+
+}
+.join{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: "digi";
+    flex-direction: column;
+
+}
+.join-products{
+width: 250px;
+height: 60px;
+border: 2px solid white;
+background-color: transparent;
+color: white;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+font-family: sans-serif;
+}
+::-webkit-scrollbar{
+    width: 13px;
+    height: 13px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 7.5px;
+    
+}
+.white-black-bar{
+    width: 100%;
+    height: 70px;
+    background: repeating-linear-gradient(-45deg, #212529, #000 10px, #fff 10px 20px);
+    
+}
+
+.bar-animtion{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+}
+.bar-img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: bar-ani 20s infinite linear;
+
+}
+.ani-img-cont>img{
+    height: 150px;
+    width: 150px;
+
+}
+@keyframes bar-ani{
+    from{
+        transform: translateX(-1);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.slide-cont{
+    width: 100%;
+    height: 85vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+    position: absolute;
+    /* translate: -25%; */
+}
+.slide{
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    
+    display: flex;justify-content: center;align-items: center;
+}
+.slide-img{
+    width: 50%;
+    height: 100%;
+
+}
+
+.text-slide{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font:30px 'digi';
+}
+#text_slide{
+    width: 50%;
+}
+.app-text{
+font: 50px 'reza';
+width: 100%;
+height: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.app-text2{
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 30%;
+}
+
+.banilogo-link{
+    font-family: 'digi';
+
+    font-size: 20px;
+    
+}
+.banilogo-link,.down-app{
+    width: 200px;
+    height: 70px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.down-app{
+    background-color: darkgray;
+}
+.banilogo-img{
+    width: 400px;
+    
+}
+.next-slide{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.next-btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: yellow;
+    transform: rotate(-90deg);
+   font-size: 25px;
+   border-radius: 5px 5px 10px 10px;
+   cursor: pointer;
+   font-family: "digi";
+
+}
+.collections{
+    width: 100%;
+    height: 1000px;
+    background-color: yellow;
+    
+}
+.collections>.title{
+    width: 100%;
+    height: 20%;
+    font-family: "digi";
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.collec-products{
+    width: 100%;
+    height: 80%;
+    display: flex;justify-content: center;align-items: center;flex-wrap: wrap;
+    column-gap: 40px;
+
+}
+.collec-opt{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    position: relative;
+
+
+}
+.collec-opt>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.collec-opt:hover img{
+    width: 120%;
+    height: 120%;
+    
+    
+}
+
+.link-opt{
+    position: absolute;
+    width: 100%;height: 100%;
+    /* background-color: aqua; */
+    
+    border-radius: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+}
+.link-opt>span{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    /* font-family: "digi"; */
+    font-family: 'digi';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px ;
+    margin-left: 10px;
+}
+.comment-view{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+}
+.comment-view>.title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'digi';
+    font-size: 70px;
+    color: white;
+}
+.comment-cont{
+    width: 100%;
+    height: 70%;
+    display: flex;justify-content: center;
+}
+.show-comment{
+    width: 80%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+
+
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:480px) and (min-width:360px) {
+    
+  
+    .show-video-cont>.text-cont>.head-text,.join{
+        font-size: 30px;
+    }
+    .slide{
+        flex-direction: column;
+    }
+    .next-btn{
+        transform: rotate(0deg);
+        width: 60px;
+        height: 40px;
+        border-radius: 5px 10px 10px 5px;
+
+    }
+    .slide-img{
+        width: 100%;
+    }
+    .slide-cont{
+        height:800px ;
+    }
+    .collec-opt{
+        height: 170px;
+        width: 170px;
+        
+    }
+    .collec-products{
+        column-gap: 5px;
+        row-gap: -10;
+        height: 600px;
+    }
+    .link-opt>span{
+        font-size: 15px;
+    }
+    .comment-view>.title{
+        font-size: 40px;
+    }
+   .app-text,.app-text2{
+    font-size: 30px;
+   }
+   .text-slide{
+    width: 100%;
+    height: 85%;
+    justify-content: space-around;
+    display: flex;
+    
+   }
+   .next-slide{
+    width: 100%;
+    height: 15%;
+   }
+   .banilogo-img{
+    width: 250px;
+   }
+   .collections{
+    height: 800px;
+   }
+    
+}
+@media screen and (max-width:767px) and (min-width:481px){
+    .show-video-cont>.text-cont>.head-text,.join{
+        font-size: 35px;
+    }
+    
+    .banilogo-img{
+    width: 200px;
+   }
+   .app-text,.app-text2{
+    font-size: 30px;
+   }
+   .text-slide{
+    width: 100%;
+    height: 85%;
+    justify-content: space-around;
+    display: flex;
+    
+   }
+   .next-slide{
+    width: 100%;
+    height: 15%;
+   }
+   .collec-opt{
+        height: 220px;
+        width: 220px;
+        
+    }
+    .collec-products{
+        column-gap: 5px;
+        row-gap: -10;
+        height: 740px;
+    }
+    .collections{
+    height: 950px;
+   }
+}
+@media screen and (max-width:510px) and (min-width:481px){
+    .slide{
+        flex-direction: column;
+    }
+    .next-btn{
+        transform: rotate(0deg);
+        width: 60px;
+        height: 40px;
+        border-radius: 5px 10px 10px 5px;
+
+    }
+    .slide-img{
+        width: 100%;
+    }
+    .slide-cont{
+        height:800px ;
+    }
+
+}
+@media screen and (max-width:767px) and (min-width:510px){
+    .next-slide{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.next-btn{
+    width: 130px;
+    height: 25px;
+    border: none;
+    background-color: yellow;
+    transform: rotate(-90deg);
+   font-size: 15px;
+   border-radius: 5px 5px 10px 10px;
+   cursor: pointer;
+   font-family: "digi";
+
+}
+.slide-cont{
+    width: 100%;
+    height: 85vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+    position: absolute;
+    /* translate: -25%; */
+}
+.slide{
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    
+    display: flex;justify-content: center;align-items: center;
+}
+.slide-img{
+    width: 50%;
+    height: 100%;
+
+}
+
+.text-slide{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font:20px 'digi';
+}
+.banilogo-link,.down-app{
+    width: 100px;
+    height: 50px;
+    
+    font-size: 15px;
+
+}
+.app-text2{
+    font-size: 20px;
+}
+}
+@media screen and (max-width:767px) and (min-width:670px){
+    .collec-opt{
+        height: 300px;
+        width: 300px;
+        
+    }
+    .collec-products{
+        column-gap: 5px;
+        row-gap: -10;
+        height: 950px;
+    }
+    .collections{
+    height: 1200px;
+   }
+}
+@media screen and (max-width:1064px) and (min-width:768px){
+    .banilogo-link,.down-app{
+    width: 150px;
+    height: 60px;
+    
+    font-size: 20px;
+
+}
+.banilogo-img{
+    width: 300px;
+   }
+.app-text{
+    font-size: 35px;
+}
+.app-text2{
+    font-size: 25px;
+}
+.collec-opt{
+        height: 300px;
+        width: 300px;
+        
+    }
+    .collec-products{
+        column-gap: 5px;
+        row-gap: -10;
+        height: 950px;
+    }
+    .collections{
+    height: 1200px;
+   }
+}
+@media screen and (max-width:1024px) and (min-width:910px){
+    .collec-opt{
+        height: 300px;
+        width: 300px;
+        
+    }
+    .collec-products{
+        column-gap: 5px;
+        row-gap: -10;
+        height: 700px;
+    }
+    .collections{
+    height: 900px;
+   }
+}

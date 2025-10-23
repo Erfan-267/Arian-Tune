@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرین تیون | جست و جو</title>
+    <link rel="shortcut icon" href="../shop-img/Arian Tune.webp" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+    font-family: "digi";
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.otf");
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.ttf");
+}
+        .mobile-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+.mobile-cont>form{
+    width: 90%;
+    display: flex;
+    height: 45px;
+    background-color: black;
+
+}
+.search-btn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: black;
+}
+.search-btn>img{
+    width: 90%;
+    height: 90%;
+}
+.mobile-cont>form>input{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.link-mobile-cont{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hover-glay{
+    color: white;
+    font-family: 'digi';
+    font-size: 25px;
+    background-color: black;
+    text-decoration: none;
+}
+.login-singin{
+    font-size: 20px;
+    font-family: 'digi';
+    text-decoration: none;
+    color: black;
+
+}
+    </style>
+</head>
+<body>
+
+<div class="parent-cont hide"><div class="mobile-cont">
+        <form action="../products page/search products.html" method="get">
+            <button class="search-btn"><img src="../shop-img/search-btn.svg" alt=""></button>
+            <input type="text" placeholder="search..." name="q">
+        </form>
+        <div class="link-mobile-cont">
+            
+                <a class="products hover-glay" href="../products page/products page(all).html">محصولات</a>
+                <!-- <a class="help hover-glay" href="">راهنمای</a> -->
+                <a class="call hover-glay" href="../conncat/conncat.html">ارتباط با ما</a>
+                <!-- <a class="comnt hover-glay" href="">تجربه شما</a> -->
+                <a class="fitments hover-glay" href="../conncat/about us.html">درباره ما</a>
+                <a class="help hover-glay" href="../conncat/regulations.html">قوانین و مقررات</a>
+               
+            
+        </div>
+        <a href="../login_sign/register.html" class="login-singin">ورود | ثبت نام</a>
+    </div></div>
+
+
+
+</body>
+</html>

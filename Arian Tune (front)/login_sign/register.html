@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرین تیون | ثبت نام</title>
+    <link rel="shortcut icon" href="../shop-img/Arian Tune.webp" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+         }   
+        @font-face {
+        font-family: "digi";
+        src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.otf");
+        src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.ttf");
+         }
+        
+        ::-webkit-scrollbar{
+            width: 13px;
+            height: 13px;
+    
+        }
+        ::-webkit-scrollbar-track{
+            background-color: black;
+    
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: white;
+            border-radius: 7.5px;
+    
+        }
+        .form-cont{
+            width: 340px;
+            height: 450px;
+            /* background-color: black; */
+            position: relative;
+            color: white;
+            transition: 1s;
+            box-shadow: 2px 2px 20px 2px yellow,-2px -2px 20px 2px yellow;
+            border-radius: 20px;
+        }
+        .login-cont,.sign-in-cont{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            transition: 1s;
+
+        }
+        input{
+            background-color: yellow;
+            text-align: center;
+            width: 80%;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+
+        }
+        .form-cont>div>form>button{
+            width: 50%;
+            height: 40px;
+            font-size: 25px;
+            font-family: 'digi';
+            
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button{
+            color: white;
+            background-color: darkcyan;
+            border: none;
+        }
+        .form-cont span{
+            width: 100%;
+            height: 15%;
+            font-size: 40px;
+            font-family: 'digi';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-cont form{
+            width: 100%;
+            height: 70%;
+            display: flex;justify-content: space-evenly;align-items: center;flex-direction: column;
+        }
+        .to-login-btn,.to-sign-btn{
+            height: 25px;
+            width: 35%;
+            border-radius: 2px;
+            text-decoration: none;
+            font-size: 10px;
+            color: white;
+            background-color: darkcyan;
+            display: flex;justify-content: center;align-items: center;
+
+        }
+        .form-cont button:hover{
+            box-shadow: 2px 2px 10px 2px darkcyan;
+        }
+        .hide{
+            display: none;
+        }
+        form>small{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    
+<header class="head-cont">
+        <div class="head-link-cont-mobile">
+            <a class="head-link-btn" href="../index/search page.html">
+                <img src="../shop-img/three line.png" alt="">
+            </a>
+        </div>
+        <div class="head-link-cont">
+            
+            <a class="hover-yellow" href="../products page/products page(all).html">محصولات</a>
+            <a class="hover-yellow" href="../conncat/about us.html">درباره ما</a>
+            <a class="hover-yellow" href="../conncat/regulations.html">قوانین و مقررات</a>
+            <a class="hover-yellow" href="../conncat/conncat.html">ارتباط با ما</a>
+            
+        </div>
+        <div class="logo-cont" >
+            <div class="name-logo">
+                <a href="../index/index.html" class="logo-link">
+                    <span class="char-name">A</span>
+                    <span class="char-name">R</span>
+                    <span class="char-name">I</span>
+                    <span class="char-name">A</span>
+                    <span class="char-name">N</span>
+                    <span class="char-name">T</span>
+                    <span class="char-name">U</span>
+                    <span class="char-name">N</span>
+                    <span class="char-name">E</span>
+                    
+                </a>
+                
+            </div>
+            
+        </div>
+        <div class="login">
+        
+             
+
+                <a class="your-accont" href="../login_sign/login.html">
+                    <img src="../shop-img/login.png" alt="">
+                </a>
+            <form method="post">
+            <select name="lang" onchange="this.form.submit()">
+            <option value="fa" >فارسی</option>
+            <option value="en" >English</option>
+            <option value="ar" >العربی</option>
+            </select>
+            </form>
+            
+        </div>
+        
+    </header>
+    <div class="ezafi" ></div>
+
+<style>
+
+    .ezafi{
+    width: 100%;
+    height: 15vh;
+    background-color: brown;
+}
+    .head-cont{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+}
+.head-link-cont{
+    margin-left: 20px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: "digi";
+    
+}
+.head-link-cont>a{
+    text-decoration: none;
+    color: white;
+}
+.logo-cont{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.your-accont{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.your-accont>img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+.login{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.login>form>select{
+width: 50px;
+height: 25px;
+margin-right: 10px;
+background-color:black;
+color: white;
+font: 13px'digi';
+border: 1px white solid;
+border-radius: 2px;
+}
+@keyframes logo-ani{
+    0%{
+        transform: translateY(10px);
+        
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.char-name{
+    display: inline-block;
+    animation: logo-ani infinite 1s alternate;
+    font-family: 'reza';
+
+}
+.char-name:nth-child(2){
+    animation-delay: 0.2s;
+}
+.char-name:nth-child(3){
+    animation-delay: 0.4s;
+}
+.char-name:nth-child(4){
+    animation-delay: 0.6s;
+}
+.char-name:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.char-name:nth-child(6){
+    animation-delay: 1s;
+}
+.char-name:nth-child(7){
+    animation-delay: 1.2s;
+}
+.char-name:nth-child(8){
+    animation-delay: 1.4s;
+}
+@font-face {
+    font-family: "reza";
+    src: url("../font/Facon Font ( www.rezagraphic.ir )/Facon Font ( www.rezagraphic.ir )/Facon Font ( www.rezagraphic.ir ).ttf");
+    
+    
+}
+.head-link-btn{
+    
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    /* font-size: 30px; */
+    border:none;
+    cursor: pointer;
+}
+.head-link-btn>img{
+width: 40px;
+height: 40px;
+}
+.logo-link{
+    text-decoration: none;
+    color: white;
+}
+.hover-yellow:hover{
+color: yellow;
+cursor: pointer;
+}
+.head-link-cont-mobile{
+    display: none;
+}
+
+@media screen and (max-width:800px) and (min-width:360px){
+    .head-link-cont-mobile{
+        display: inline-block;
+        width: 15%;
+        
+    }
+
+    .head-link-cont{
+        display: none;
+    }
+    .logo-cont{
+        width: 40%;
+        
+    }
+    .login{
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .login>form>select{
+        width: 43px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .head-link-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .char-name{
+        font-size: 12px;
+    }
+    .your-accont{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media screen and (max-width:1000px) and (min-width:801px){
+    .char-name{
+        font-size: 25px;
+    }
+    .hover-yellow{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:448px) and (min-width:360px){
+    .char-name{
+        font-size: 12px;
+    }
+    .logo-cont{
+        width: 45%;
+    }
+}
+@media screen and (max-width:800px) and (min-width:449px){
+    .char-name{
+        font-size: 15px;
+    }
+}
+</style>
+
+
+
+
+
+
+
+    <section class="cont">
+    <div class="form-cont">
+     <div class="sign-in-cont">
+        <span>ثبت نام</span>
+        <form action="" method="post" class="sign-form ">
+            <small></small>
+            <input type="text" name="username" id="username" placeholder="نام کاربری">
+            <input type="email" name="email" id="" placeholder="ایمیل">
+            <input type="password" name="password" id="password"placeholder="گذرواژه">
+            <input type="password" name="rePassword" id="rePassword" placeholder="تکرار گذرواژه">
+            <button class="send-sign-btn" type="submit">ارسال</button>
+        </form>
+        <a href="../login_sign/login.html" class="to-login-btn">آیا حساب دارید(ورود)</a>
+
+     </div>
+    </div>
+    </section>
+    
+
+
+
+
+
+
+    
+<footer class="end-cont">
+                <div class="end-link-cont">
+                    <a class="products hover-glay" href="../products page/products page(all).html">محصولات</a>
+                    
+                    <!-- <a class="help hover-glay" href="">راهنمای</a> -->
+                    <a class="call hover-glay" href="../conncat/conncat.html">ارتباط با ما</a>
+                    <!-- <a class="comnt hover-glay" >تجربه شما</a> -->
+                    <a class="fitments hover-glay" href="../conncat/about us.html">درباره ما</a>
+                    <a class="help hover-glay" href="../conncat/regulations.html">قوانین و مقررات</a>
+                    
+                </div>
+                <h5 class="end-text"> </h5>
+</footer>
+
+<style>
+.end-cont{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.end-link-cont{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'digi';
+}
+.hover-glay{
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+}
+.hover-glay:hover{
+    color: darkcyan;
+}
+@media screen and (max-width:448px) and (min-width:360px){
+    .end-cont{
+        height: 85vh;
+    }
+    .end-link-cont{
+        flex-direction: column;
+    }
+}
+</style>
+<script>
+let sal=new Date();
+let salll=sal.getFullYear();
+document.querySelector('.end-text').innerHTML=`${salll},ArianTune-IR`
+</script>
+
+
+    
+</body>
+</html>

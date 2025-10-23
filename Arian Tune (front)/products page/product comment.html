@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرین تیون | فرمون پراید 132</title>
+    <link rel="shortcut icon" href="../shop-img/Arian Tune.webp" type="image/x-icon">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'digi', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: "digi";
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.otf");
+    src: url("../font/Digi-Gafwww.digifonts.ir_/Digi\ Ghaf\ Bold.ttf");
+}
+        .cont {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .add-comment-cont, .read-comment-cont {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .add-comment-cont {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .add-comment-cont>section {
+            font: 40px 'digi';
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .add-comment-cont form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .add-comment-cont label {
+            font-size: 30px;
+            background-color: darkgray;
+            padding: 5px;
+        }
+
+        .add-comment-cont textarea {
+            width: 80%;
+            height: 100px;
+            font-size: 16px;
+            text-align: center;
+            background-color: yellow;
+            border: 3px black solid;
+            padding: 10px;
+            resize: none;
+        }
+
+        .add-comment-cont button {
+            width: 150px;
+            height: 50px;
+            background-color: yellow;
+            border: 3px black solid;
+            border-radius: 5px;
+            font: 30px 'digi';
+            cursor: pointer;
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-comment-cont button:active {
+            background-color: black;
+            color: yellow;
+        }
+
+        .read-comment-cont {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .comment-box {
+            background-color: lightgray;
+            border-radius: 10px;
+            border: 2px darkgray solid;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .comment-box > section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .comment-box > p {
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: right;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .cont {
+                padding: 10px;
+            }
+
+            .add-comment-cont {
+                padding: 15px;
+            }
+
+            .add-comment-cont textarea {
+                width: 90%;
+                height: 80px;
+            }
+
+            .add-comment-cont button {
+                width: 120px;
+                height: 45px;
+            }
+
+            .read-comment-cont {
+                gap: 15px;
+            }
+
+            .comment-box {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .add-comment-cont > section {
+                font-size: 30px;
+            }
+
+            .add-comment-cont label {
+                font-size: 24px;
+            }
+
+            .add-comment-cont textarea {
+                width: 95%;
+                height: 70px;
+            }
+
+            .add-comment-cont button {
+                width: 100px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .comment-box {
+                padding: 10px;
+            }
+
+            .comment-box > section {
+                font-size: 13px;
+            }
+
+            .comment-box > p {
+                font-size: 12px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+<header class="head-cont">
+        <div class="head-link-cont-mobile">
+            <a class="head-link-btn" href="../index/search page.html">
+                <img src="../shop-img/three line.png" alt="">
+            </a>
+        </div>
+        <div class="head-link-cont">
+            
+            <a class="hover-yellow" href="../products page/products page(all).html">محصولات</a>
+            <a class="hover-yellow" href="../conncat/about us.html">درباره ما</a>
+            <a class="hover-yellow" href="../conncat/regulations.html">قوانین و مقررات</a>
+            <a class="hover-yellow" href="../conncat/conncat.html">ارتباط با ما</a>
+            
+        </div>
+        <div class="logo-cont" >
+            <div class="name-logo">
+                <a href="../index/index.html" class="logo-link">
+                    <span class="char-name">A</span>
+                    <span class="char-name">R</span>
+                    <span class="char-name">I</span>
+                    <span class="char-name">A</span>
+                    <span class="char-name">N</span>
+                    <span class="char-name">T</span>
+                    <span class="char-name">U</span>
+                    <span class="char-name">N</span>
+                    <span class="char-name">E</span>
+                    
+                </a>
+                
+            </div>
+            
+        </div>
+        <div class="login">
+        
+             
+
+                <a class="your-accont" href="../login_sign/login.html">
+                    <img src="../shop-img/login.png" alt="">
+                </a>
+            <form method="post">
+            <select name="lang" onchange="this.form.submit()">
+            <option value="fa" >فارسی</option>
+            <option value="en" >English</option>
+            <option value="ar" >العربی</option>
+            </select>
+            </form>
+            
+        </div>
+        
+    </header>
+    <div class="ezafi" ></div>
+
+<style>
+
+    .ezafi{
+    width: 100%;
+    height: 15vh;
+    background-color: brown;
+}
+    .head-cont{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+}
+.head-link-cont{
+    margin-left: 20px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: "digi";
+    
+}
+.head-link-cont>a{
+    text-decoration: none;
+    color: white;
+}
+.logo-cont{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.your-accont{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.your-accont>img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+.login{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.login>form>select{
+width: 50px;
+height: 25px;
+margin-right: 10px;
+background-color:black;
+color: white;
+font: 13px'digi';
+border: 1px white solid;
+border-radius: 2px;
+}
+@keyframes logo-ani{
+    0%{
+        transform: translateY(10px);
+        
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.char-name{
+    display: inline-block;
+    animation: logo-ani infinite 1s alternate;
+    font-family: 'reza';
+
+}
+.char-name:nth-child(2){
+    animation-delay: 0.2s;
+}
+.char-name:nth-child(3){
+    animation-delay: 0.4s;
+}
+.char-name:nth-child(4){
+    animation-delay: 0.6s;
+}
+.char-name:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.char-name:nth-child(6){
+    animation-delay: 1s;
+}
+.char-name:nth-child(7){
+    animation-delay: 1.2s;
+}
+.char-name:nth-child(8){
+    animation-delay: 1.4s;
+}
+@font-face {
+    font-family: "reza";
+    src: url("../font/Facon Font ( www.rezagraphic.ir )/Facon Font ( www.rezagraphic.ir )/Facon Font ( www.rezagraphic.ir ).ttf");
+    
+    
+}
+.head-link-btn{
+    
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    /* font-size: 30px; */
+    border:none;
+    cursor: pointer;
+}
+.head-link-btn>img{
+width: 40px;
+height: 40px;
+}
+.logo-link{
+    text-decoration: none;
+    color: white;
+}
+.hover-yellow:hover{
+color: yellow;
+cursor: pointer;
+}
+.head-link-cont-mobile{
+    display: none;
+}
+
+@media screen and (max-width:800px) and (min-width:360px){
+    .head-link-cont-mobile{
+        display: inline-block;
+        width: 15%;
+        
+    }
+
+    .head-link-cont{
+        display: none;
+    }
+    .logo-cont{
+        width: 40%;
+        
+    }
+    .login{
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .login>form>select{
+        width: 43px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .head-link-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .char-name{
+        font-size: 12px;
+    }
+    .your-accont{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media screen and (max-width:1000px) and (min-width:801px){
+    .char-name{
+        font-size: 25px;
+    }
+    .hover-yellow{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:448px) and (min-width:360px){
+    .char-name{
+        font-size: 12px;
+    }
+    .logo-cont{
+        width: 45%;
+    }
+}
+@media screen and (max-width:800px) and (min-width:449px){
+    .char-name{
+        font-size: 15px;
+    }
+}
+</style>
+
+
+
+
+    <div class="cont">
+        <div class="add-comment-cont">
+            <section>
+                <span>فرمون پراید 132</span>
+            </section>
+            <form action="" method="post">
+                <input type="hidden" name="post_id" value="">
+                <label for="">نظر خود می توانید در کادر زیر بنویسید</label>
+                <textarea name="comment" id=""></textarea>
+                <button type="submit">ارسال</button>
+            </form>
+        </div>
+
+        <div class="read-comment-cont">
+            <section class="comment-box">
+                <section><span>2025/8/7</span><span>عرفان فریدونی</span></section>
+                <p>مقرون به صرفه...</p>
+            </section>
+            
+        </div>
+    </div>
+
+    
+<footer class="end-cont">
+                <div class="end-link-cont">
+                    <a class="products hover-glay" href="../products page/products page(all).html">محصولات</a>
+                    
+                    <!-- <a class="help hover-glay" href="">راهنمای</a> -->
+                    <a class="call hover-glay" href="../conncat/conncat.html">ارتباط با ما</a>
+                    <!-- <a class="comnt hover-glay" >تجربه شما</a> -->
+                    <a class="fitments hover-glay" href="../conncat/about us.html">درباره ما</a>
+                    <a class="help hover-glay" href="../conncat/regulations.html">قوانین و مقررات</a>
+                    
+                </div>
+                <h5 class="end-text"> </h5>
+</footer>
+
+<style>
+.end-cont{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.end-link-cont{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'digi';
+}
+.hover-glay{
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+}
+.hover-glay:hover{
+    color: darkcyan;
+}
+@media screen and (max-width:448px) and (min-width:360px){
+    .end-cont{
+        height: 85vh;
+    }
+    .end-link-cont{
+        flex-direction: column;
+    }
+}
+</style>
+<script>
+let sal=new Date();
+let salll=sal.getFullYear();
+document.querySelector('.end-text').innerHTML=`${salll},ArianTune-IR`
+</script>
+</body>
+</html>
+
